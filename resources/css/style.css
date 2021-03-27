@@ -1,0 +1,111 @@
+
+@font-face {
+    font-family: "Caviar";
+    src: url("../fonts/CaviarDreams.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Caviar Bold";
+    src: url("../fonts/Caviar_Dreams_Bold.ttf") format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Caviar", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: lavenderblush;
+}
+
+h2 {
+    font-family: "Caviar Bold", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    line-height: 1.6;
+}
+
+.banner {
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(78, 14, 138);
+    text-align: center;
+    padding: 15px;
+    background-image: url("../images/pattern.jpg");
+}
+
+strong {
+    font-weight: 900;
+}
+
+.galery > div {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.congrats {
+    margin-top: 30px;
+}
+
+.traits {
+    margin-top: 50px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns */
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+footer p {
+    font-family: "Caviar Bold", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(78, 14, 138);
+}
